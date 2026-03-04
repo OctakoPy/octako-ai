@@ -13,6 +13,8 @@ const WorkflowAutomation = lazy(() => import("./pages/services/WorkflowAutomatio
 const AIIntegration = lazy(() => import("./pages/services/AIIntegration"));
 const ProcessRedesign = lazy(() => import("./pages/services/ProcessRedesign"));
 const FixMySheet = lazy(() => import("./pages/services/FixMySheet"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
 
 const queryClient = new QueryClient();
 
@@ -31,6 +33,8 @@ const App = () => (
             <Route path="/services/ai-integration" element={<AIIntegration />} />
             <Route path="/services/process-redesign" element={<ProcessRedesign />} />
             <Route path="/services/fixmysheet" element={<FixMySheet />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
