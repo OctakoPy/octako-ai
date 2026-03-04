@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 const WorkflowAutomation = lazy(() => import("./pages/services/WorkflowAutomation"));
 const AIIntegration = lazy(() => import("./pages/services/AIIntegration"));
@@ -28,6 +29,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services/workflow-automation" element={<WorkflowAutomation />} />
             <Route path="/services/ai-integration" element={<AIIntegration />} />
