@@ -22,7 +22,7 @@ const footerSections = [
   {
     title: "Resources",
     links: [
-      { label: "Blog", href: "#", hoverColor: "hover:text-accent-pink" },
+      { label: "Blog", href: "/blog", hoverColor: "hover:text-accent-pink" },
       { label: "Case Studies", href: "/#examples", hoverColor: "hover:text-accent-pink" },
       { label: "FAQs", href: "/#faq", hoverColor: "hover:text-accent-pink" },
       { label: "Research Sources", href: "/#hard-truth", hoverColor: "hover:text-accent-pink" },
