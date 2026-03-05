@@ -1,29 +1,12 @@
 import { MainLayout } from "@/layouts/MainLayout";
 import { AnimateIn } from "@/components/AnimateIn";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { Mail, Clock, MessageSquare } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
 
   return (
     <MainLayout>
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
+      <section className="pt-8 sm:pt-16 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
         <div className="absolute inset-0 grid-pattern opacity-10" />
         <div className="section-container relative z-10">
           <AnimateIn>
@@ -40,53 +23,9 @@ const Contact = () => {
 
       <section className="section-padding bg-background">
         <div className="section-container">
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Form */}
-            <AnimateIn>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    placeholder="Your name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="mt-2"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="you@company.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="mt-2"
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="message">Tell us about your task or workflow</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="What repetitive task is eating your time? What workflow needs fixing?"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={6}
-                    className="mt-2"
-                  />
-                </div>
-                <Button variant="purple" size="xl" type="submit" className="w-full">
-                  Send Message
-                </Button>
-              </form>
-            </AnimateIn>
-
+          <div className="max-w-3xl mx-auto">
             {/* Info */}
-            <AnimateIn delay={0.2}>
+            <AnimateIn>
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-accent-purple/10">

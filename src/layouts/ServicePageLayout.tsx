@@ -58,7 +58,7 @@ export const ServicePageLayout = ({
   return (
     <MainLayout>
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
+      <section className="pt-8 sm:pt-16 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
         <div className="absolute inset-0 grid-pattern opacity-10" />
         <div className="section-container relative z-10">
           <AnimateIn>
@@ -81,42 +81,45 @@ export const ServicePageLayout = ({
         </div>
       </section>
 
-      {/* What We Build */}
-      <section className="section-padding surface-bg">
-        <div className="section-container max-w-3xl">
-          <AnimateIn>
-            <h2 className="text-section-mobile md:text-section mb-6">{whatWeBuild.title}</h2>
-            <ul className="space-y-3">
-              {whatWeBuild.items.map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <Check size={18} className={`${colors.text} mt-0.5 shrink-0`} />
-                  <span className="text-muted-foreground">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* How It Works */}
+      {/* What We Build & How It Works */}
       <section className="section-padding bg-background">
-        <div className="section-container max-w-3xl">
-          <AnimateIn>
-            <h2 className="text-section-mobile md:text-section mb-8">How It Works</h2>
-            <div className="space-y-6">
-              {howItWorks.map((step, i) => (
-                <div key={i} className="flex gap-4">
-                  <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center shrink-0`}>
-                    <span className={`text-sm font-bold ${colors.text}`}>{i + 1}</span>
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">{step.title}</p>
-                    <p className="text-sm text-muted-foreground">{step.detail}</p>
-                  </div>
+        <div className="section-container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* What We Build */}
+            <AnimateIn>
+              <div className="max-w-3xl">
+                <h2 className="text-section-mobile md:text-section mb-6">{whatWeBuild.title}</h2>
+                <ul className="space-y-3">
+                  {whatWeBuild.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <Check size={18} className={`${colors.text} mt-0.5 shrink-0`} />
+                      <span className="text-muted-foreground">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </AnimateIn>
+
+            {/* How It Works */}
+            <AnimateIn>
+              <div className="max-w-3xl">
+                <h2 className="text-section-mobile md:text-section mb-8">How It Works</h2>
+                <div className="space-y-6">
+                  {howItWorks.map((step, i) => (
+                    <div key={i} className="flex gap-4">
+                      <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center shrink-0`}>
+                        <span className={`text-sm font-bold ${colors.text}`}>{i + 1}</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-foreground">{step.title}</p>
+                        <p className="text-sm text-muted-foreground">{step.detail}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </AnimateIn>
+              </div>
+            </AnimateIn>
+          </div>
         </div>
       </section>
 

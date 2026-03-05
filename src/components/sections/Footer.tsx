@@ -42,7 +42,7 @@ const footerSections = [
 export const Footer = () => {
   return (
     <footer className="bg-foreground text-white/60" role="contentinfo">
-      <div className="section-container px-4 sm:px-6 lg:px-8 py-16">
+      <div className="section-container px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {footerSections.map((section) => (
             <div key={section.title}>
