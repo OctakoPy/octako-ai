@@ -7,12 +7,12 @@ const individualBullets = [
   "Copying data between systems",
   "Generating the same reports",
   "Formatting documents",
-  "Chasing information",
+  "Chasing or reconciling information",
   "Fighting with Excel",
 ];
 
 const individualBuilds = [
-  "Spreadsheet automation that actually works",
+  "Automation that actually works",
   "Custom scripts for your repetitive tasks",
   "Data pipelines that eliminate manual entry",
   "Templates and systems that save hours",

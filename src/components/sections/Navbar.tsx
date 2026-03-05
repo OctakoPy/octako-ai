@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { services } from "@/data/services-data";
 
 const navLinks = [
-  { label: "Services", href: "/services" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -39,14 +45,16 @@ export const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
           scrolled
-            ? "bg-background/80 backdrop-blur-xl border-b border-border shadow-sm"
-            : "bg-transparent"
+            ? "bg-background/80 backdrop-blur-xl border-border shadow-sm"
+            : "bg-transparent border-transparent"
         }`}
       >
         <nav className="section-container flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-          <Link to="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground">
+          <Link to="/" className={`flex items-center gap-2 font-bold text-xl tracking-tight transition-colors ${
+            scrolled ? "text-foreground" : "text-white"
+          }`}>
             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground text-sm font-bold">S</span>
             </div>
@@ -55,12 +63,46 @@ export const Navbar = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`px-3 py-2 text-sm font-medium transition-colors rounded-md flex items-center gap-1 ${
+                    scrolled
+                      ? "text-muted-foreground hover:text-foreground"
+                      : "text-white/80 hover:text-white"
+                  }`}
+                >
+                  Services <ChevronDown size={16} />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-56">
+                {services.map((service) => (
+                  <DropdownMenuItem key={service.link} asChild>
+                    <Link
+                      to={service.link}
+                      className="flex items-start gap-2 py-2"
+                    >
+                      <div className="flex-shrink-0 mt-1">
+                        <service.icon size={16} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium">{service.title}</p>
+                      </div>
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 to={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md"
+                className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${
+                  scrolled
+                    ? "text-muted-foreground hover:text-foreground"
+                    : "text-white/80 hover:text-white"
+                }`}
               >
                 {link.label}
               </Link>
@@ -75,7 +117,9 @@ export const Navbar = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className={`md:hidden p-2 transition-colors ${
+              scrolled ? "text-foreground" : "text-white"
+            }`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
@@ -95,6 +139,23 @@ export const Navbar = () => {
             className="fixed inset-0 z-40 bg-background pt-20 px-6"
           >
             <nav className="flex flex-col gap-2" aria-label="Mobile navigation">
+              {/* Services Submenu */}
+              <div className="py-2">
+                <p className="px-4 py-2 text-sm font-semibold text-foreground">Services</p>
+                <div className="flex flex-col gap-1 pl-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.link}
+                      to={service.link}
+                      onClick={() => handleNavClick(service.link)}
+                      className="py-2 px-4 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
+                    >
+                      {service.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="border-b border-border my-2" />
               {navLinks.map((link) => (
                 <Link
                   key={link.label}

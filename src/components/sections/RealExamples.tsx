@@ -25,7 +25,7 @@ const accentTextMap: Record<string, string> = {
   orange: "text-accent-orange",
 };
 
-export const RealExamples = () => {
+export const Testimonials = () => {
   return (
     <section className="section-padding bg-background" id="examples">
       <div className="section-container">

@@ -144,27 +144,6 @@ export const Pricing = () => {
             </div>
           </AnimateIn>
         </div>
-
-        {/* Bottom pricing notes */}
-        <AnimateIn className="max-w-3xl mx-auto">
-          <div className="rounded-xl border-2 border-border bg-card p-8">
-            <h3 className="text-card-title mb-4">Why This Pricing Structure?</h3>
-            <div className="space-y-4 text-sm text-muted-foreground">
-              <p>
-                <span className="font-semibold text-foreground">For Fixed Deliverables:</span>{" "}
-                You get predictability. No hourly billing, no scope creep, no surprises. You know the cost upfront and get exactly what you need.
-              </p>
-              <p>
-                <span className="font-semibold text-foreground">For Custom Systems:</span>{" "}
-                You get partnership. We work with your team, test in your environment, and iterate until it works perfectly.
-              </p>
-              <p>
-                <span className="font-semibold text-accent-green">All Pricing Is Negotiable:</span>{" "}
-                Every business is different. If you're a nonprofit, early-stage startup, or have budget constraints, let's talk. We can often find creative solutions or phased approaches.
-              </p>
-            </div>
-          </div>
-        </AnimateIn>
       </div>
     </section>
   );

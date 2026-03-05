@@ -35,13 +35,13 @@ export const HardTruth = () => {
         </AnimateIn>
         <AnimateIn delay={0.1} className="text-center mb-4">
           <p className="text-body-lg text-muted-foreground max-w-3xl mx-auto">
-            88% of companies now use AI. Most see zero ROI. Here's what the
+            Only 5% of companies are generating substantial value from AI while 60% are seeing absolutely no gains. Here's what the
             research shows:
           </p>
         </AnimateIn>
         <AnimateIn delay={0.15} className="text-center mb-12">
           <p className="text-sm text-muted-foreground/70 max-w-2xl mx-auto">
-            The 88% figure comes from McKinsey's State of AI Report 2024, which
+            This statistic comes from BCG's The Widening AI Value Gap Report 2025, which
             found widespread adoption but limited success in converting that
             adoption into business value.
           </p>
@@ -67,43 +67,73 @@ export const HardTruth = () => {
           ))}
         </StaggerChildren>
 
-        {/* The Pattern */}
-        <AnimateIn className="max-w-3xl mx-auto">
-          <div className="rounded-xl border-2 border-border bg-card p-8">
-            <h3 className="text-card-title mb-4">The Pattern:</h3>
-            <p className="text-muted-foreground mb-6">
-              Companies that fail bought generic tools and hoped for magic.
-              Companies that succeed redesigned specific workflows first, then
-              added targeted automation.
-            </p>
+{/* The Pattern */}
+<AnimateIn className="max-w-5xl mx-auto">
+  <div className="rounded-xl border-2 border-border bg-card p-8 shadow-sm">
+    <div className="mb-6 flex items-center justify-between">
+      <h3 className="text-2xl font-bold text-foreground">The AI Reality Check</h3>
+      <span className="rounded-full bg-accent-orange/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-orange">
+        What's actually happening
+      </span>
+    </div>
 
-            <h4 className="font-semibold text-foreground mb-4">The Difference:</h4>
-            <div className="space-y-4 mb-6">
-              {differences.map((d, i) => (
-                <div key={i} className="space-y-2">
-                  <div className="flex items-start gap-3">
-                    <X size={18} className="text-accent-orange mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">{d.wrong}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check size={18} className="text-accent-green mt-0.5 shrink-0" />
-                    <span className="text-foreground font-medium">{d.right}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+    <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
+      The gap isn't just about who has AI—it's about who is actually winning with it. 
+      Most companies are just <span className="text-foreground font-semibold">"dabbling"</span> with basic tools, while the leaders are 
+      <span className="text-foreground font-semibold"> changing the way they work</span> to pull ahead.
+    </p>
 
-            <div className="pt-4 border-t border-border">
-              <p className="text-foreground font-semibold">
-                Bottom Line:{" "}
-                <span className="font-normal text-muted-foreground">
-                  Generic LLMs help you write emails faster. Process automation
-                  eliminates emails that shouldn't exist.
-                </span>
-              </p>
-            </div>
-          </div>
-        </AnimateIn>
+    <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground">
+      The Winning Difference:
+    </h4>
+    
+    <div className="mb-8 space-y-6">
+      {/* Point 1: For those who haven't started */}
+      <div className="group space-y-2">
+        <div className="flex items-start gap-3">
+          <X size={18} className="mt-1 shrink-0 text-accent-orange" />
+          <span className="text-muted-foreground italic">
+            Waiting for the "perfect time" to start.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <Check size={18} className="mt-1 shrink-0 text-accent-green" />
+          <span className="text-foreground">
+            Getting in the game now to chase the <span className="font-bold">1.7x revenue growth</span> seen by those who do.
+          </span>
+        </div>
+      </div>
+
+      {/* Point 2: For those seeing no results */}
+      <div className="group space-y-2">
+        <div className="flex items-start gap-3">
+          <X size={18} className="mt-1 shrink-0 text-accent-orange" />
+          <span className="text-muted-foreground italic">
+            Buying a few generic tools and hoping for a miracle.
+          </span>
+        </div>
+        <div className="flex items-start gap-3">
+          <Check size={18} className="mt-1 shrink-0 text-accent-green" />
+          <span className="text-foreground">
+            Fixing the process first—the critical step <span className="font-bold">84% of your peers are missing</span>.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div className="pt-6 border-t border-border">
+      <p className="text-foreground font-bold text-lg">
+        The Bottom Line:
+      </p>
+      <p className="mt-2 text-muted-foreground leading-relaxed">
+        If you're still on the sidelines, you're handing a massive lead to your competition. 
+        But if you've already started and aren't seeing a difference, you're likely among the 
+        <span className="text-foreground font-semibold"> 80% seeing zero impact</span> because you're 
+        automating the old way of working instead of building a new one.
+      </p>
+    </div>
+  </div>
+</AnimateIn>
       </div>
     </section>
   );
