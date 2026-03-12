@@ -6,6 +6,17 @@ import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, MapPin, Rss } from "lucide-react";
 import { certifications, projects } from "@/data/portfolio-data";
 import profilePic from "/profile_picture.png";
+import googleCert from "/certifications/google.png";
+import ibmCert from "/certifications/ibm.png";
+import awsCert from "/certifications/aws.png";
+import microsoftCert from "/certifications/microsoft.png";
+
+const certImageMap: Record<number, string> = {
+  1: googleCert,
+  2: ibmCert,
+  3: awsCert,
+  4: microsoftCert,
+};
 
 const About = () => {
   return (
@@ -111,7 +122,7 @@ const About = () => {
                     >
                       {cert.image && (
                         <img
-                          src={cert.image}
+                          src={certImageMap[cert.id]}
                           alt={cert.name}
                           className="w-full h-32 object-cover rounded-lg mb-3"
                         />
