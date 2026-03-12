@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <MainLayout>
-      <section className="pt-8 sm:pt-16 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
+      <section className="pt-24 sm:pt-16 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
         <div className="absolute inset-0 grid-pattern opacity-10" />
         <div className="section-container relative z-10 max-w-4xl">
           <AnimateIn>

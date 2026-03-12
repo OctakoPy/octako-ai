@@ -19,10 +19,10 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm mb-8"
+            className="inline-flex items-center gap-1 md:gap-2 px-2 md:px-4 py-1 md:py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm mb-8"
           >
-            <Zap size={16} className="text-accent-cyan" />
-            <span className="text-sm font-medium text-white/80">AI Automation & Workflow Optimization</span>
+            <Zap size={14} className="text-accent-cyan md:w-4 md:h-4" />
+            <span className="text-xs md:text-sm font-medium text-white/80">AI Automation & Workflow Optimization</span>
           </motion.div>
 
           <motion.h1

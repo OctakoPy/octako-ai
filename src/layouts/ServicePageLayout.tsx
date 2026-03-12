@@ -58,12 +58,12 @@ export const ServicePageLayout = ({
   return (
     <MainLayout>
       {/* Hero */}
-      <section className="pt-8 sm:pt-16 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
+      <section className="pt-24 sm:pt-16 md:pt-32 pb-8 sm:pb-12 md:pb-20 px-4 sm:px-6 lg:px-8 gradient-hero relative">
         <div className="absolute inset-0 grid-pattern opacity-10" />
         <div className="section-container relative z-10">
           <AnimateIn>
-            <div className={`inline-flex p-3 rounded-xl ${colors.bg} mb-6`}>
-              <Icon size={32} className={colors.text} />
+            <div className={`inline-flex p-2 md:p-3 rounded-xl ${colors.bg} mb-8 md:mb-6`}>
+              <Icon size={24} className={`${colors.text} md:w-8 md:h-8`} />
             </div>
             <h1 className="text-hero-mobile md:text-hero text-white mb-4">{title}</h1>
             <p className="text-body-lg text-white/70 max-w-2xl">{subtitle}</p>

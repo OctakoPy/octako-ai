@@ -29,7 +29,7 @@ export const WhoThisIsFor = () => {
   return (
     <section className="section-padding bg-background">
       <div className="section-container">
-        <AnimateIn className="text-center mb-16">
+        <AnimateIn className="text-center mb-8 md:mb-16">
           <h2 className="text-section-mobile md:text-section">
             Two Types of Workflow Automation
           </h2>
