@@ -14,8 +14,7 @@ const footerSections = [
     title: "Company",
     links: [
       { label: "About", href: "/about", hoverColor: "hover:text-accent-cyan" },
-      { label: "How It Works", href: "/#how-it-works", hoverColor: "hover:text-accent-cyan" },
-      { label: "Case Studies", href: "/#examples", hoverColor: "hover:text-accent-cyan" },
+      //{ label: "Case Studies", href: "/#examples", hoverColor: "hover:text-accent-cyan" },
       { label: "Contact", href: "/contact", hoverColor: "hover:text-accent-cyan" },
     ],
   },
@@ -23,18 +22,9 @@ const footerSections = [
     title: "Resources",
     links: [
       { label: "Blog", href: "/blog", hoverColor: "hover:text-accent-pink" },
-      { label: "Case Studies", href: "/#examples", hoverColor: "hover:text-accent-pink" },
+      //{ label: "Case Studies", href: "/#examples", hoverColor: "hover:text-accent-pink" },
       { label: "FAQs", href: "/#faq", hoverColor: "hover:text-accent-pink" },
       { label: "Research Sources", href: "/#hard-truth", hoverColor: "hover:text-accent-pink" },
-    ],
-  },
-  {
-    title: "Get Started",
-    links: [
-      { label: "FixMySheet", href: "/services/fixmysheet", hoverColor: "hover:text-accent-green" },
-      { label: "Book Consultation", href: "/contact", hoverColor: "hover:text-accent-purple" },
-      { label: "Request Quote", href: "/contact", hoverColor: "hover:text-accent-purple" },
-      { label: "Email", href: "mailto:octakopy@gmail.com", hoverColor: "hover:text-accent-green" },
     ],
   },
 ];
@@ -43,10 +33,16 @@ export const Footer = () => {
   return (
     <footer className="bg-foreground text-white/60" role="contentinfo">
       <div className="section-container px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           {footerSections.map((section) => (
             <div key={section.title}>
-              <h4 className="text-sm font-semibold text-white mb-4">{section.title}</h4>
+              {section.title === "Services" ? (
+                <Link to="/services" className="text-sm font-semibold text-white mb-4 hover:text-accent-purple transition-colors block">
+                  {section.title}
+                </Link>
+              ) : (
+                <h4 className="text-sm font-semibold text-white mb-4">{section.title}</h4>
+              )}
               <ul className="space-y-3">
                 {section.links.map((link) => (
                   <li key={link.label}>
@@ -65,8 +61,10 @@ export const Footer = () => {
 
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-            <p>© 2025 Octako AI | All pricing negotiable</p>
-            <p className="text-white/40">Built with actual AI automation (of course)</p>
+            <div className="flex items-center gap-2">
+              <img src="/icons/icon32.png" alt="Octako AI" className="w-6 h-6 rounded" />
+              <p>© 2026 Octako AI</p>
+            </div>
           </div>
         </div>
       </div>

@@ -17,12 +17,12 @@ export const individualFAQs: FAQItem[] = [
   {
     question: "How much does it cost?",
     answer:
-      "FixMySheet and simple automations have fixed pricing that we quote upfront. We give you a clear price before starting—no hourly billing surprises.",
+      "Every automation is unique. We give you a clear price before starting.",
   },
   {
     question: "How long does it take?",
     answer:
-      "Most small automations: 1-2 weeks. Spreadsheet fixes: 24-48 hours.",
+      "Most small automations: 1-2 weeks.",
   },
 ];
 

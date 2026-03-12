@@ -55,9 +55,7 @@ export const Navbar = () => {
           <Link to="/" className={`flex items-center gap-2 font-bold text-xl tracking-tight transition-colors ${
             scrolled ? "text-foreground" : "text-white"
           }`}>
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground text-sm font-bold">S</span>
-            </div>
+            <img src="/icons/icon32.png" alt="Octako AI" className="w-8 h-8 rounded-lg" />
             Octako
           </Link>
 

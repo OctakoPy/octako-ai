@@ -36,24 +36,11 @@ export const FinalCTA = () => {
                   </li>
                 ))}
               </ul>
-
-              <div className="space-y-2 text-sm text-muted-foreground mb-6">
-                {[
-                  { label: "Fix my broken spreadsheet", link: "/services/fixmysheet" },
-                  { label: "Automate one repetitive task", link: "/contact" },
-                  { label: "Get expert advice", link: "/contact" },
-                ].map((opt) => (
-                  <Link
-                    key={opt.label}
-                    to={opt.link}
-                    className="flex items-center gap-2 hover:text-accent-cyan transition-colors"
-                  >
-                    <ArrowRight size={14} className="text-accent-cyan" />
-                    {opt.label}
-                  </Link>
-                ))}
-              </div>
-
+              <p className="text-xs text-muted-foreground mb-4">
+                <Link to="/services" className="text-accent-cyan hover:underline font-medium">
+                  Find a service that matches your need →
+                </Link>
+              </p>
               <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
                 <Clock size={12} /> Days to 2 weeks · Negotiable pricing
               </div>
@@ -123,3 +110,5 @@ export const FinalCTA = () => {
     </section>
   );
 };
+
+export default FinalCTA;

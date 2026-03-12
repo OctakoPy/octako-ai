@@ -60,6 +60,12 @@ export const Hero = () => {
                 <ArrowRight size={20} />
               </Link>
             </Button>
+            <Button variant="cyan" size="hero" asChild>
+              <Link to="/services">
+                Explore Services
+                <ArrowRight size={20} />
+              </Link>
+            </Button>
           </motion.div>
         </div>
       </div>

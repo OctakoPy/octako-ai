@@ -20,7 +20,7 @@ const companySteps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="section-padding surface-bg" id="how-it-works">
+    <section className="section-padding bg-background" id="how-it-works">
       <div className="section-container">
         <AnimateIn className="text-center mb-16">
           <h2 className="text-section-mobile md:text-section">From Problem to Solution</h2>
@@ -30,9 +30,7 @@ export const HowItWorks = () => {
           {/* Individuals */}
           <AnimateIn delay={0.1}>
             <div className="rounded-xl border-2 border-border bg-card p-8 h-full flex flex-col">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent-cyan/10 text-accent-cyan mb-4 w-fit">
-                For Individuals
-              </span>
+              <h2 className="text-base font-semibold text-accent-cyan mb-4">For Individuals</h2>
               <h3 className="text-subsection mb-6">Start Small, See Results Fast</h3>
 
               <StaggerChildren className="space-y-6 mb-8 flex-1" staggerDelay={0.1}>
@@ -65,7 +63,7 @@ export const HowItWorks = () => {
               </div>
 
               <Button variant="cyan" size="lg" className="w-full" asChild>
-                <Link to="/contact">Start Here: Quick Automation</Link>
+                <Link to="/services">Start Here: Quick Automation</Link>
               </Button>
             </div>
           </AnimateIn>
@@ -73,9 +71,7 @@ export const HowItWorks = () => {
           {/* Companies */}
           <AnimateIn delay={0.2}>
             <div className="rounded-xl border-2 border-border bg-card p-8 h-full flex flex-col">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent-purple/10 text-accent-purple mb-4 w-fit">
-                For Companies
-              </span>
+              <h2 className="text-base font-semibold text-accent-purple mb-4">For Companies</h2>
               <h3 className="text-subsection mb-6">Transform Your Operations</h3>
 
               <StaggerChildren className="space-y-5 mb-8 flex-1" staggerDelay={0.1}>

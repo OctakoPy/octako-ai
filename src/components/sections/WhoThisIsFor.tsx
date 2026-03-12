@@ -39,9 +39,7 @@ export const WhoThisIsFor = () => {
           {/* Individuals Card */}
           <AnimateIn delay={0.1}>
             <div className="group rounded-xl border-2 border-border bg-gradient-to-b from-surface to-background p-8 transition-all duration-300 hover:border-accent-cyan hover:shadow-lg hover:-translate-y-0.5 h-full">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent-cyan/10 text-accent-cyan mb-6">
-                For Individuals
-              </span>
+              <h2 className="text-base font-semibold text-accent-cyan mb-4">For Individuals</h2>
               <h3 className="text-subsection mb-4">You Know There's a Better Way</h3>
               <p className="text-muted-foreground mb-4">
                 You spend 5-10 hours every week doing the same repetitive tasks:
@@ -71,7 +69,7 @@ export const WhoThisIsFor = () => {
               </ul>
 
               <Button variant="cyan" size="lg" className="w-full sm:w-auto" asChild>
-                <Link to="/contact">Fix My Repetitive Task</Link>
+                <Link to="/services">Fix My Repetitive Task</Link>
               </Button>
             </div>
           </AnimateIn>
@@ -79,9 +77,7 @@ export const WhoThisIsFor = () => {
           {/* Companies Card */}
           <AnimateIn delay={0.2}>
             <div className="group rounded-xl border-2 border-border bg-gradient-to-b from-surface to-background p-8 transition-all duration-300 hover:border-accent-purple hover:shadow-lg hover:-translate-y-0.5 h-full">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent-purple/10 text-accent-purple mb-6">
-                For Companies
-              </span>
+              <h2 className="text-base font-semibold text-accent-purple mb-4">For Companies</h2>
               <h3 className="text-subsection mb-4">You Want AI, But Not the Hype</h3>
               <p className="text-muted-foreground mb-4">
                 You've been told "AI will transform your business." You bought the
@@ -109,7 +105,7 @@ export const WhoThisIsFor = () => {
               </p>
 
               <Button variant="purple" size="lg" className="w-full sm:w-auto" asChild>
-                <Link to="/contact">Audit Our Workflows</Link>
+                <Link to="/services">Audit Our Workflows</Link>
               </Button>
             </div>
           </AnimateIn>

@@ -57,11 +57,11 @@ export const HardTruth = () => {
                 <div className={`text-5xl font-bold mb-3 ${accentColorMap[stat.accentColor]}`}>
                   {stat.number}
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-foreground mb-3">
                   {stat.title}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">{stat.context}</p>
-                <p className="text-xs text-muted-foreground/60">{stat.source}</p>
+                <p className="text-base text-muted-foreground mb-4">{stat.context}</p>
+                <p className="text-sm text-muted-foreground/60">{stat.source}</p>
               </div>
             </StaggerItem>
           ))}
@@ -70,62 +70,60 @@ export const HardTruth = () => {
 {/* The Pattern */}
 <AnimateIn className="max-w-5xl mx-auto">
   <div className="rounded-xl border-2 border-border bg-card p-8 shadow-sm">
-    <div className="mb-6 flex items-center justify-between">
+    <div className="mb-8 flex items-center justify-between">
       <h3 className="text-2xl font-bold text-foreground">The AI Reality Check</h3>
       <span className="rounded-full bg-accent-orange/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-orange">
         What's actually happening
       </span>
     </div>
 
-    <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
+    <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
       The gap isn't just about who has AI—it's about who is actually winning with it. 
       Most companies are just <span className="text-foreground font-semibold">"dabbling"</span> with basic tools, while the leaders are 
       <span className="text-foreground font-semibold"> changing the way they work</span> to pull ahead.
     </p>
 
-    <h4 className="mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground">
+    <h4 className="mb-8 text-sm font-bold uppercase tracking-widest text-muted-foreground">
       The Winning Difference:
     </h4>
     
-    <div className="mb-8 space-y-6">
-      {/* Point 1: For those who haven't started */}
-      <div className="group space-y-2">
-        <div className="flex items-start gap-3">
-          <X size={18} className="mt-1 shrink-0 text-accent-orange" />
-          <span className="text-muted-foreground italic">
-            Waiting for the "perfect time" to start.
-          </span>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+      {/* Wrong Approach vs Right Approach Cards */}
+      {[
+        {
+          wrong: "Waiting for the \"perfect time\" to start.",
+          right: "Getting in the game now to chase the 1.7x revenue growth seen by those who do."
+        },
+        {
+          wrong: "Buying a few generic tools and hoping for a miracle.",
+          right: "Fixing the process first—the critical step 84% of your peers are missing."
+        }
+      ].map((item, i) => (
+        <div key={i} className="space-y-3">
+          {/* Wrong Approach */}
+          <div className="rounded-lg border border-accent-orange/30 bg-accent-orange/5 p-4">
+            <div className="flex items-start gap-3">
+              <X size={18} className="mt-0.5 shrink-0 text-accent-orange" />
+              <span className="text-muted-foreground text-sm italic">{item.wrong}</span>
+            </div>
+          </div>
+          
+          {/* Right Approach */}
+          <div className="rounded-lg border border-accent-green/30 bg-accent-green/5 p-4">
+            <div className="flex items-start gap-3">
+              <Check size={18} className="mt-0.5 shrink-0 text-accent-green" />
+              <span className="text-foreground text-sm font-medium">{item.right}</span>
+            </div>
+          </div>
         </div>
-        <div className="flex items-start gap-3">
-          <Check size={18} className="mt-1 shrink-0 text-accent-green" />
-          <span className="text-foreground">
-            Getting in the game now to chase the <span className="font-bold">1.7x revenue growth</span> seen by those who do.
-          </span>
-        </div>
-      </div>
-
-      {/* Point 2: For those seeing no results */}
-      <div className="group space-y-2">
-        <div className="flex items-start gap-3">
-          <X size={18} className="mt-1 shrink-0 text-accent-orange" />
-          <span className="text-muted-foreground italic">
-            Buying a few generic tools and hoping for a miracle.
-          </span>
-        </div>
-        <div className="flex items-start gap-3">
-          <Check size={18} className="mt-1 shrink-0 text-accent-green" />
-          <span className="text-foreground">
-            Fixing the process first—the critical step <span className="font-bold">84% of your peers are missing</span>.
-          </span>
-        </div>
-      </div>
+      ))}
     </div>
 
-    <div className="pt-6 border-t border-border">
-      <p className="text-foreground font-bold text-lg">
+    <div className="rounded-lg border border-accent-cyan/30 bg-accent-cyan/5 p-6">
+      <p className="text-foreground font-bold text-lg mb-3">
         The Bottom Line:
       </p>
-      <p className="mt-2 text-muted-foreground leading-relaxed">
+      <p className="text-muted-foreground leading-relaxed">
         If you're still on the sidelines, you're handing a massive lead to your competition. 
         But if you've already started and aren't seeing a difference, you're likely among the 
         <span className="text-foreground font-semibold"> 80% seeing zero impact</span> because you're 
