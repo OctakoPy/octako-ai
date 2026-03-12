@@ -5,8 +5,8 @@ import { MessageSquare, Search, Wrench, Rocket, Settings, Clock } from "lucide-r
 
 const individualSteps = [
   { icon: MessageSquare, title: "Describe your repetitive task", detail: "5 minutes" },
-  { icon: Search, title: "We assess if it's automatable and quote", detail: "Same day" },
-  { icon: Wrench, title: "We build your solution", detail: "1-2 weeks" },
+  { icon: Search, title: "Assessment: is it automatable?", detail: "Same day" },
+  { icon: Wrench, title: "Your solution is built", detail: "1-2 weeks" },
   { icon: Rocket, title: "You get your time back", detail: "" },
 ];
 

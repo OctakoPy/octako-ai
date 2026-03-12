@@ -43,9 +43,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-body-lg text-white/70 max-w-2xl mb-10"
           >
-            We build intelligent automation for the repetitive tasks draining your
-            time. Custom workflow solutions that actually deliver results—not
-            generic AI tools that sit unused.
+Intelligent automation for the repetitive tasks draining your time. Custom workflow solutions that actually deliver results—not generic AI tools that sit unused.
           </motion.p>
 
           <motion.div

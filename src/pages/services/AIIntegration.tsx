@@ -4,12 +4,12 @@ import { Brain } from "lucide-react";
 const AIIntegration = () => (
   <ServicePageLayout
     title="AI Integration (Not LLMs)"
-    subtitle="For when you need intelligence, not creativity. We build AI systems that make decisions, not conversation."
+    subtitle="For when you need intelligence, not creativity. AI systems that make decisions, not conversation."
     accentColor="pink"
     icon={Brain}
     whatThisIs="AI integration means adding targeted intelligence to your existing workflows. Not chatbots that write emails—but systems that analyze documents, route tickets, predict issues, and make decisions automatically. The kind of AI that saves serious time."
     whatWeBuild={{
-      title: "What We Build",
+      title: "Built with:",
       items: [
         "Document analysis systems (extract, categorize, flag)",
         "Intelligent routing (tickets, inquiries, leads)",
@@ -28,7 +28,7 @@ const AIIntegration = () => (
       { title: "Test and deploy", detail: "Validate accuracy, deploy to production with monitoring" },
       { title: "Optimize", detail: "Continuously improve based on performance data" },
     ]}
-    exampleResult="Our support team handles 3x more tickets because AI handles 70% of routing and initial responses"
+    exampleResult="Support operations increased 3x: AI handles 70% of ticket routing and initial responses"
     whoFor="Companies with complex processes that need smart automation"
     pricing="Custom pricing based on complexity and integration requirements"
     relatedServices={[

@@ -9,7 +9,7 @@ const ProcessRedesign = () => (
     icon={Layers}
     whatThisIs="Process redesign means stepping back and asking 'should this step even exist?' before trying to make it faster. Most companies try to automate their current workflow. The smart ones redesign the workflow first, then automate what's left."
     whatWeBuild={{
-      title: "What We Do",
+      title: "Services include:",
       items: [
         "Audit your current processes end-to-end",
         "Identify bottlenecks, redundancies, and waste",
@@ -28,7 +28,7 @@ const ProcessRedesign = () => (
       { title: "Implementation", detail: "Execute changes incrementally with your team" },
       { title: "Measure and optimize", detail: "Track results, refine, and expand what works" },
     ]}
-    exampleResult="We discovered our 'efficiency problem' was actually 3 redundant approval steps. Eliminating those saved 40 hours/week before we automated anything."
+    exampleResult="Discovered that the 'efficiency problem' was actually 3 redundant approval steps. Eliminating those saved 40 hours/week before automation was ever needed."
     whoFor="Companies serious about transformation, not just tools"
     pricing="Custom pricing. Discovery audit can be standalone or part of larger engagement."
     relatedServices={[
@@ -36,7 +36,7 @@ const ProcessRedesign = () => (
       { title: "AI Integration", href: "/services/ai-integration" },
       { title: "FixMySheet", href: "/services/fixmysheet" },
     ]}
-    ctaText="Audit Our Workflows"
+    ctaText="Start a Workflow Audit"
   />
 );
 

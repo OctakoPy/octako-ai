@@ -19,8 +19,8 @@ const accentBorderMap: Record<string, string> = {
 };
 
 const differences = [
-  { wrong: "\"Let's give everyone an AI assistant\"", right: "\"Let's eliminate the 40 hours our team spends on manual data entry\"" },
-  { wrong: "\"We need an AI strategy\"", right: "\"We need to fix our broken invoice processing workflow\"" },
+  { wrong: "\"Let's give everyone an AI assistant\"", right: "\"Let's eliminate 40 hours/week of manual data entry\"" },
+  { wrong: "\"We need an AI strategy\"", right: "\"The broken invoice processing workflow is the real problem\"" },
   { wrong: "\"Creative AI for everyone!\"", right: "\"Automated systems for specific bottlenecks\"" },
 ];
 

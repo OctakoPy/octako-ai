@@ -7,7 +7,7 @@ const services = [
     icon: Network,
     title: "Workflow Automation",
     subtitle: "For when you're doing the same task over and over",
-    description: "What we automate:",
+    description: "Automations for:",
     bullets: [
       "Data entry and system synchronization",
       "Report generation and distribution",
@@ -16,7 +16,7 @@ const services = [
       "File organization and management",
     ],
     whoFor: "Anyone spending 5+ hours/week on repetitive tasks",
-    example: "\"We went from 12 hours/week compiling sales reports to 20 minutes reviewing auto-generated dashboards\"",
+    example: "\"Results: 12 hours/week compiling sales reports reduced to 20 minutes reviewing auto-generated dashboards\"",
     link: "/services/workflow-automation",
     linkText: "Learn More",
     accentColor: "purple" as const,
@@ -25,7 +25,7 @@ const services = [
     icon: Brain,
     title: "AI Integration (Not LLMs)",
     subtitle: "For when you need intelligence, not creativity",
-    description: "What we build:",
+    description: "Built with:",
     bullets: [
       "Document analysis systems (extract, categorize, flag)",
       "Intelligent routing (tickets, inquiries, leads)",
@@ -34,7 +34,7 @@ const services = [
       "Custom chatbots for specific workflows",
     ],
     whoFor: "Companies with complex processes that need smart automation",
-    example: "\"Our support team handles 3x more tickets because AI handles 70% of routing and initial responses\"",
+    example: "\"Support operations increased 3x: AI handles 70% of ticket routing and initial responses\"",
     link: "/services/ai-integration",
     linkText: "Learn More",
     accentColor: "pink" as const,
@@ -43,7 +43,7 @@ const services = [
     icon: Layers,
     title: "Process Redesign",
     subtitle: "For when you need to fix the workflow first",
-    description: "What we do:",
+    description: "Services include:",
     bullets: [
       "Audit your current processes",
       "Identify bottlenecks and waste",
@@ -52,7 +52,7 @@ const services = [
       "Implement and measure",
     ],
     whoFor: "Companies serious about transformation, not just tools",
-    example: "\"We discovered our 'efficiency problem' was actually 3 redundant approval steps. Eliminating those saved 40 hours/week before we automated anything.\"",
+    example: "\"The 'efficiency problem' turned out to be 3 redundant approval steps. Eliminating those saved 40 hours/week before automation was needed.\"",
     link: "/services/process-redesign",
     linkText: "Learn More",
     accentColor: "cyan" as const,
@@ -61,7 +61,7 @@ const services = [
     icon: Table,
     title: "FixMySheet",
     subtitle: "For when Excel is your enemy",
-    description: "What we fix:",
+    description: "Solutions for:",
     bullets: [
       "Broken formulas and slow spreadsheets",
       "Data cleaning and transformation",
@@ -70,7 +70,7 @@ const services = [
       "Migration from spreadsheets to real systems",
     ],
     whoFor: "Anyone fighting with spreadsheets instead of making decisions",
-    example: "\"My monthly reconciliation went from 8 hours of formula-fighting to a 5-minute button click\"",
+    example: "\"Monthly reconciliation: 8 hours of formula-fighting reduced to a 5-minute button click\"",
     link: "/services/fixmysheet",
     linkText: "Get Your Sheet Fixed",
     accentColor: "green" as const,
@@ -89,7 +89,7 @@ export const ServicesGrid = () => {
     <section className="section-padding bg-background" id="services">
       <div className="section-container">
         <AnimateIn className="text-center mb-4">
-          <h2 className="text-section-mobile md:text-section">What We Actually Build</h2>
+          <h2 className="text-section-mobile md:text-section">Custom Solutions for Your Workflows</h2>
         </AnimateIn>
         <AnimateIn delay={0.1} className="text-center mb-16">
           <p className="text-body-lg text-muted-foreground">

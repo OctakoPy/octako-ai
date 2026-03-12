@@ -21,7 +21,7 @@ export const Pricing = () => {
         </AnimateIn>
         <AnimateIn delay={0.1} className="text-center mb-16">
           <p className="text-body-lg text-muted-foreground">
-            We charge based on what you need: a one-time deliverable or an ongoing system.
+            Pricing based on what you need: a one-time deliverable or an ongoing system.
           </p>
         </AnimateIn>
 
@@ -39,7 +39,7 @@ export const Pricing = () => {
               <h3 className="text-subsection mb-2">Fixed Deliverables</h3>
               <p className="text-sm text-muted-foreground mb-6">
                 For clearly defined, one-time tasks. You know exactly what you need done,
-                we deliver it, and you're set.
+                it's delivered quickly, and you're set.
               </p>
 
               <Accordion type="multiple" className="mb-6 flex-1">
@@ -93,7 +93,7 @@ export const Pricing = () => {
               <h3 className="text-subsection mb-2">Custom Systems</h3>
               <p className="text-base text-muted-foreground mb-6">
                 For complex workflows that need integration and iteration.
-                We build something that becomes part of your operations.
+                Custom systems that become part of your operations.
               </p>
 
               <Accordion type="multiple" className="mb-6 flex-1">

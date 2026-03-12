@@ -31,7 +31,7 @@ export const WhoThisIsFor = () => {
       <div className="section-container">
         <AnimateIn className="text-center mb-16">
           <h2 className="text-section-mobile md:text-section">
-            We Work With Two Types of People
+            Two Types of Workflow Automation
           </h2>
         </AnimateIn>
 
@@ -58,7 +58,7 @@ export const WhoThisIsFor = () => {
                 You <em>know</em> there should be a faster way. You're right.
               </p>
 
-              <h4 className="font-semibold text-foreground mb-3">What We Build:</h4>
+              <h4 className="font-semibold text-foreground mb-3">Solutions Delivered:</h4>
               <ul className="space-y-2 mb-8">
                 {individualBuilds.map((item) => (
                   <li key={item} className="flex items-start gap-3">
@@ -105,7 +105,7 @@ export const WhoThisIsFor = () => {
               </p>
 
               <Button variant="purple" size="lg" className="w-full sm:w-auto" asChild>
-                <Link to="/services">Audit Our Workflows</Link>
+                <Link to="/services">See What's Possible</Link>
               </Button>
             </div>
           </AnimateIn>

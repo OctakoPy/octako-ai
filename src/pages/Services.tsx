@@ -23,7 +23,7 @@ const Services = () => {
         <div className="section-container relative z-10 text-center">
           <AnimateIn>
             <h1 className="text-hero-mobile md:text-hero text-primary-foreground mb-4">
-              What We Build
+              Services for Custom Workflows
             </h1>
             <p className="text-body-lg text-primary-foreground/70 max-w-2xl mx-auto">
               Find the service that solves your specific workflow challenge.

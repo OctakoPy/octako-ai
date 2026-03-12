@@ -47,7 +47,7 @@ const About = () => {
                   About Me
                 </h2>
                 <p className="text-body-lg">
-                  I'm an AI Automation Developer based in Selangor. I founded Octako AI because I firmly believe that most people are using AI wrongly. Instead of replacing humans with generative AI, we should be replacing outdated systems with automation, freeing up your time to do things that matter.
+                  I'm an AI Automation Developer based in Selangor. I founded Octako AI because I firmly believe that most people are using AI wrongly. Instead of replacing humans with generative AI, outdated systems should be replaced with automation, freeing up your time to do things that matter.
                 </p>
                 <p>
                   Whenever you notice you have a repetitive task, it's highly likely that at least some part of the process can be automated. That's where I come in.
