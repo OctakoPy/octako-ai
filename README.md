@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+# Octako AI
 
-## Project info
+Custom automation solutions for the repetitive work draining your time.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Quick Links:**
+- 🌐 [Website](https://octakopy.github.io/octako-ai/) 
+- 📧 [Email: octakopy@gmail.com](mailto:octakopy@gmail.com)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## What We Do
 
-**Use Lovable**
+**Workflow Automation** — Custom automation that eliminates repetitive tasks (data entry, reports, document processing, email workflows)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**AI Integration** — Intelligent systems that route tickets, analyze documents, make decisions, and handle 70% of operational work
 
-Changes made via Lovable will be committed automatically to this repo.
+**Process Redesign** — Audit and optimize broken workflows before automation (automating bad processes just scales the problem)
 
-**Use your preferred IDE**
+**FixMySheet** — Broken spreadsheets fixed and rebuilt to actually work (most fixes completed within 24-48 hours)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Here's the Reality
 
-Follow these steps:
+You've bought AI tools. Nobody uses them. Your team spends 40 hours/week on manual work. Your spreadsheets are a liability.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Generic solutions fail on specific problems. Custom systems succeed.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This is what Octako AI does.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Who This Is For
 
-**Edit a file directly in GitHub**
+- **Individuals** spending 5+ hours/week on repetitive tasks
+- **Companies** with broken workflows, manual handoffs, and no clear path from "AI strategy" to results
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## How It Works
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Describe your challenge** — Tell us what you're doing manually
+2. **Get an honest assessment** — Same-day evaluation with clear pricing
+3. **Custom solution is built** — Tailored exactly to your workflow
+4. **You review and launch** — Test, adjust, and go live
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Built with React, Vite, Tailwind CSS, and hosted on GitHub Pages.
