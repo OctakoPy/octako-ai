@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, MapPin, Rss } from "lucide-react";
 import { certifications, projects } from "@/data/portfolio-data";
+import profilePic from "/profile_picture.png";
 
 const About = () => {
   return (
@@ -37,7 +38,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row gap-10 items-start">
               {/* Profile Picture */}
               <img
-                src="/profile_picture.png"
+                src={profilePic}
                 alt="Caleb - AI Automation Developer"
                 className="w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-2xl border-2 border-border object-cover"
               />

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "/icons/icon32.png";
 
 const footerSections = [
   {
@@ -62,7 +63,7 @@ export const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
             <div className="flex items-center gap-2">
-              <img src="/icons/icon32.png" alt="Octako AI" className="w-6 h-6 rounded" />
+              <img src={logo} alt="Octako AI" className="w-6 h-6 rounded" />
               <p>© 2026 Octako AI</p>
             </div>
           </div>

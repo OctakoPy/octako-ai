@@ -10,6 +10,7 @@ import {
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { services } from "@/data/services-data";
+import logo from "/icons/icon32.png";
 
 const navLinks = [
   { label: "Blog", href: "/blog" },
@@ -55,7 +56,7 @@ export const Navbar = () => {
           <Link to="/" className={`flex items-center gap-2 font-bold text-xl tracking-tight transition-colors ${
             scrolled ? "text-foreground" : "text-white"
           }`}>
-            <img src="/icons/icon32.png" alt="Octako AI" className="w-8 h-8 rounded-lg" />
+            <img src={logo} alt="Octako AI" className="w-8 h-8 rounded-lg" />
             Octako
           </Link>
 
