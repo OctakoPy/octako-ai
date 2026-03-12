@@ -72,28 +72,30 @@ export const ServicePageLayout = ({
       </section>
 
       {/* What This Is */}
-      <section className="section-padding bg-background">
+      <section className="pt-8 sm:pt-16 md:pt-16 pb-2 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="section-container max-w-3xl">
           <AnimateIn>
-            <h2 className="text-section-mobile md:text-section mb-6">What This Is</h2>
-            <p className="text-body-lg text-muted-foreground">{whatThisIs}</p>
+            <div className="rounded-xl border border-border bg-surface p-8">
+              <h2 className="text-section-mobile md:text-section mb-4 text-center">What This Is</h2>
+              <p className="text-body-lg text-muted-foreground text-center">{whatThisIs}</p>
+            </div>
           </AnimateIn>
         </div>
       </section>
 
       {/* What We Build & How It Works */}
-      <section className="section-padding bg-background">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* What We Build */}
             <AnimateIn>
-              <div className="max-w-3xl">
-                <h2 className="text-section-mobile md:text-section mb-6">{whatWeBuild.title}</h2>
-                <ul className="space-y-3">
+              <div className="rounded-xl border border-border bg-surface p-8">
+                <h2 className="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2"><span className={`w-8 h-8 rounded-full ${colors.bg} flex items-center justify-center`}><Check size={18} className={colors.text} /></span>{whatWeBuild.title}</h2>
+                <ul className="space-y-4">
                   {whatWeBuild.items.map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <Check size={18} className={`${colors.text} mt-0.5 shrink-0`} />
-                      <span className="text-muted-foreground">{item}</span>
+                      <span className="text-muted-foreground text-base">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -102,17 +104,17 @@ export const ServicePageLayout = ({
 
             {/* How It Works */}
             <AnimateIn>
-              <div className="max-w-3xl">
-                <h2 className="text-section-mobile md:text-section mb-8">How It Works</h2>
-                <div className="space-y-6">
+              <div className="rounded-xl border border-border bg-surface p-8">
+                <h2 className="text-xl md:text-2xl font-semibold mb-6 flex items-center gap-2"><span className={`w-8 h-8 rounded-full ${colors.bg} flex items-center justify-center text-sm font-bold ${colors.text}`}>⚙</span>How It Works</h2>
+                <div className="space-y-4">
                   {howItWorks.map((step, i) => (
                     <div key={i} className="flex gap-4">
-                      <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center shrink-0`}>
-                        <span className={`text-sm font-bold ${colors.text}`}>{i + 1}</span>
+                      <div className={`w-8 h-8 rounded-full ${colors.bg} flex items-center justify-center shrink-0 flex-shrink-0`}>
+                        <span className={`text-xs font-bold ${colors.text}`}>{i + 1}</span>
                       </div>
-                      <div>
-                        <p className="font-medium text-foreground">{step.title}</p>
-                        <p className="text-sm text-muted-foreground">{step.detail}</p>
+                      <div className="min-w-0">
+                        <p className="font-medium text-foreground text-base">{step.title}</p>
+                        <p className="text-sm text-muted-foreground mt-0.5">{step.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -123,11 +125,12 @@ export const ServicePageLayout = ({
         </div>
       </section>
 
-      {/* Example Result */}
+      {/* Example Result - Hidden for now */}
+      {false && (
       <section className="section-padding surface-bg">
         <div className="section-container max-w-3xl">
           <AnimateIn>
-            <div className="rounded-xl border-2 border-border bg-card p-8">
+            <div className="rounded-xl border-2 border-border bg-card p-8 text-center">
               <h3 className="text-card-title mb-2">Example Result</h3>
               <blockquote className="text-body-lg text-muted-foreground italic">
                 "{exampleResult}"
@@ -140,26 +143,29 @@ export const ServicePageLayout = ({
           </AnimateIn>
         </div>
       </section>
+      )}
 
       {/* Related Services */}
-      <section className="section-padding bg-background">
+      <section className="px-4 sm:px-6 lg:px-8 bg-background pb-16">
         <div className="section-container max-w-3xl">
           <AnimateIn>
-            <h2 className="text-card-title mb-6">Related Services</h2>
-            <div className="flex flex-wrap gap-3 mb-10">
+            <h2 className="text-section-mobile md:text-section mb-8 text-center">Related Services</h2>
+            <div className="flex flex-wrap gap-3 mb-10 justify-center">
               {relatedServices.map((s) => (
                 <Link
                   key={s.title}
                   to={s.href}
-                  className="inline-flex items-center gap-1 px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:bg-surface transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:border-accent-purple hover:bg-accent-purple/5 transition-all"
                 >
                   {s.title} <ArrowRight size={14} />
                 </Link>
               ))}
             </div>
-            <Button variant={colors.button} size="hero" className="w-full sm:w-auto" asChild>
-              <Link to="/contact">{ctaText}</Link>
-            </Button>
+            <div className="flex justify-center">
+              <Button variant={colors.button} size="hero" asChild>
+                <Link to="/contact">{ctaText}</Link>
+              </Button>
+            </div>
           </AnimateIn>
         </div>
       </section>

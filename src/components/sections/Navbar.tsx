@@ -58,7 +58,7 @@ export const Navbar = () => {
             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground text-sm font-bold">S</span>
             </div>
-            Streamline
+            Octako
           </Link>
 
           {/* Desktop Nav */}

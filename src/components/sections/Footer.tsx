@@ -34,7 +34,7 @@ const footerSections = [
       { label: "FixMySheet", href: "/services/fixmysheet", hoverColor: "hover:text-accent-green" },
       { label: "Book Consultation", href: "/contact", hoverColor: "hover:text-accent-purple" },
       { label: "Request Quote", href: "/contact", hoverColor: "hover:text-accent-purple" },
-      { label: "Email", href: "mailto:hello@streamlinesystems.com", hoverColor: "hover:text-accent-green" },
+      { label: "Email", href: "mailto:octakopy@gmail.com", hoverColor: "hover:text-accent-green" },
     ],
   },
 ];
@@ -65,7 +65,7 @@ export const Footer = () => {
 
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-            <p>© 2025 Streamline Systems | All pricing negotiable</p>
+            <p>© 2025 Octako AI | All pricing negotiable</p>
             <p className="text-white/40">Built with actual AI automation (of course)</p>
           </div>
         </div>

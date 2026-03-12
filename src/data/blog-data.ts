@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       <h2>The Bottom Line</h2>
       <p>Generic AI tools help you do existing work slightly faster. Process automation eliminates work that shouldn't exist in the first place. That's the difference between a tool that collects dust and a system that transforms your operations.</p>
     `,
-    author: "Streamline Systems",
+    author: "Octako AI",
     date: "2025-06-15",
     readTime: "4 min read",
     category: "ai",
@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
       <h2>What To Do About It</h2>
       <p>Most of these problems have straightforward solutions: proper database systems, automated data pipelines, or even just well-structured spreadsheets with proper validation. The fix is usually faster and cheaper than you think.</p>
     `,
-    author: "Streamline Systems",
+    author: "Octako AI",
     date: "2025-06-08",
     readTime: "3 min read",
     category: "spreadsheets",
@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
       <h2>The Hidden Benefits</h2>
       <p>ROI calculations usually undercount the value because they miss: reduced errors, faster turnaround, employee satisfaction, and the ability to scale without hiring.</p>
     `,
-    author: "Streamline Systems",
+    author: "Octako AI",
     date: "2025-05-28",
     readTime: "5 min read",
     category: "automation",
