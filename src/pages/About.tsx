@@ -18,6 +18,13 @@ const certImageMap: Record<number, string> = {
   4: microsoftCert,
 };
 
+const certImageUrlMap: Record<number, string> = {
+  1: "/octako-ai/certifications/google.png",
+  2: "/octako-ai/certifications/ibm.png",
+  3: "/octako-ai/certifications/aws.png",
+  4: "/octako-ai/certifications/microsoft.png",
+};
+
 const About = () => {
   return (
     <MainLayout>
@@ -115,7 +122,7 @@ const About = () => {
                   {certifications.map((cert) => (
                     <a
                       key={cert.id}
-                      href={cert.image}
+                      href={certImageUrlMap[cert.id]}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-4 border border-border rounded-lg bg-background hover:border-accent-purple transition-colors cursor-pointer"
